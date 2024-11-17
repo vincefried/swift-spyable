@@ -115,6 +115,9 @@ struct SpyFactory {
                 InheritedTypeSyntax(
                     type: IdentifierTypeSyntax(name: protocolDeclaration.name)
                 )
+                InheritedTypeSyntax(
+                    type: IdentifierTypeSyntax(name: TokenSyntax.identifier("@unchecked Sendable"))
+                )
             },
             memberBlockBuilder: {
                 for variableDeclaration in variableDeclarations {
